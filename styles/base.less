@@ -1,0 +1,129 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+  background-color: #eee8d5;
+}
+
+.syntax--comment {
+  font-style: italic;
+  color: #93a1a1;
+}
+
+.syntax--constant, .syntax--support.syntax--constant {
+  color: #2aa198;
+}
+
+.syntax--entity {
+  color: #268bd2;
+}
+
+.syntax--invalid {
+  color: #dc322f;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: #d33682;
+}
+
+.syntax--keyword {
+  color: #859900;
+}
+
+.syntax--storage {
+  color: #b58900;
+}
+
+.syntax--string {
+  color: #2aa198;
+}
+
+.syntax--support {
+  color: #b58900;
+}
+
+.syntax--variable {
+  color: #268bd2;
+}
+
+.syntax--markup.syntax--underline {
+  color: #6c71c4;
+}
+
+.syntax--markup.syntax--bold {
+  font-weight: bold;
+}
+
+.syntax--markup.syntax--heading {
+  color: #cb4b16;
+}
+
+.syntax--markup.syntax--italic {
+  font-style: italic;
+}
+
+.syntax--markup.syntax--quote, .syntax--markup.syntax--raw {
+  color: #2aa198;
+}
+
+.syntax--markup.syntax--deleted {
+  color: #dc322f;
+}
+
+.syntax--markup.syntax--inserted {
+  color: #859900;
+}
+
+.syntax--markup.syntax--changed {
+  color: #b58900;
+}
+
+.syntax--markup.syntax--ignored {
+  color: #93a1a1;
+}
+
+.syntax--markup.syntax--untracked {
+  color: #93a1a1;
+}
+
+.syntax--meta.syntax--diff {
+  color: #268bd2;
+}

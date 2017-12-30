@@ -1,0 +1,19 @@
+{
+  "name": "solarized-minimal-light",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Solarized Minimal Light color theme",
+  "keywords": [
+    "solarized",
+    "syntax",
+    "theme",
+    "color-theme",
+    "light"
+  ],
+  "readmeFilename": "README.md",
+  "repository": "https://github.com/jibsen/atom-solarized-minimal-light",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}
