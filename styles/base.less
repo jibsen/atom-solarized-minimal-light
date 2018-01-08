@@ -3,45 +3,58 @@
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
+
+  .line-number {
+    opacity: 1.0;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number.cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+      color: @syntax-gutter-text-color-selected;
+    }
+
+    .line-number.cursor-line-no-selection {
+      color: @syntax-gutter-text-color-selected;
+    }
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .selection .region {
+    background-color: @highlight3;
+  }
+
+  &.is-focused {
+    .selection .region {
+      background-color: @syntax-selection-color;
+    }
+
+    .cursor {
+      border-color: @syntax-cursor-color;
+    }
+
+    .line-number.cursor-line-no-selection, .line.cursor-line {
+      background-color: @base2;
+    }
+  }
 }
 
-atom-text-editor .gutter {
-  background-color: @syntax-gutter-background-color;
-  color: @syntax-gutter-text-color;
-}
 
-atom-text-editor .gutter .line-number.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
-}
-
-atom-text-editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
-}
-
-atom-text-editor .wrap-guide {
-  color: @syntax-wrap-guide-color;
-}
-
-atom-text-editor .indent-guide {
-  color: @syntax-indent-guide-color;
-}
-
-atom-text-editor .invisible-character {
-  color: @syntax-invisible-character-color;
-}
-
-atom-text-editor.is-focused .cursor {
-  border-color: @syntax-cursor-color;
-}
-
-atom-text-editor.is-focused .selection .region {
-  background-color: @syntax-selection-color;
-}
-
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
-  background-color: #eee8d5;
-}
+// Syntax styles
 
 .syntax--comment {
   font-style: italic;
