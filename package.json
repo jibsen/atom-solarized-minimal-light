@@ -11,6 +11,7 @@
     "light"
   ],
   "readmeFilename": "README.md",
+  "homepage": "https://jibsen.github.io/solarized-minimal/",
   "repository": "https://github.com/jibsen/atom-solarized-minimal-light",
   "license": "MIT",
   "engines": {
